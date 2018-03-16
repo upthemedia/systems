@@ -14,11 +14,7 @@
 
 
 ## Pendiente
-* apt-get update
-* Instalar vim
-* Congelar una versión de Docker o crear nuestra propia imagen (probablemente mejor lo segundo)
-* Configure automatic builds on docker hub: https://docs.docker.com/docker-hub/builds/
-* Pasar a Docker Compose
+* https://trello.com/c/WCThfX8P/29-montar-ci-jenkins-dockerizado-en-local
 
 
 ## Links de interés
