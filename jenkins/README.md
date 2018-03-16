@@ -1,5 +1,5 @@
 # Jenkins
-16/03/2018[] La última versión LTS de Jenkins es la 2.107.1
+[16/03/2018] La última versión LTS de Jenkins es la 2.107.1
 
 ## Prerequisitos
 * Se debe instalar Docker y Docker Compose: https://docs.docker.com/compose/install/
