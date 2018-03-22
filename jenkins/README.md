@@ -8,9 +8,11 @@
 
 ## Cómo construir la imagen y arrancarlo
 1. Construye la imagen: `docker build -t jenkins-upthemedia .`
-2. Arráncala: `docker run -p 8080:8080 --rm --name jenkins-upthemedia jenkins-upthemedia:latest`, donde:
-    * `jenkins-upthemedia:latest` es el nombre de la imagen a partir de la cual crear un contenedor
-    * `jenkins-upthemedia` es el nombre que damos al contenedor
+2. Para arrancarla puedes hacerlo:
+    * Manualmente: `docker run -p 8080:8080 --rm --name jenkins-upthemedia jenkins-upthemedia:latest`, donde:
+        * `jenkins-upthemedia:latest` es el nombre de la imagen a partir de la cual crear un contenedor
+        * `jenkins-upthemedia` es el nombre que damos al contenedor
+    * Con Docker Compose: `docker-compse up -d`
 
 
 ## Pendiente
