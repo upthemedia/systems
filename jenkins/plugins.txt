@@ -70,3 +70,5 @@ pam-auth
 ldap
 email-ext
 php
+locale
+greenballs

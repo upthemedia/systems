@@ -5,10 +5,13 @@ MAINTAINER Isidro López (islomar@gmail.com)
 USER root
 
 RUN apt-get update && apt-get install -y \
-  php7.0 \
+  software-properties-common \
   vim \
   curl \
   git
+
+#RUN add-apt-repository ppa:ondrej/php -y
+#RUN apt-get update && apt-get install -y php7.2
 
 RUN mkdir /var/log/jenkins
 RUN chown -R  jenkins:jenkins /var/log/jenkins
