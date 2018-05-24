@@ -15,6 +15,27 @@
         * `jenkins-upthemedia` es el nombre que damos al contenedor
 
 
+## How to access local Jenkins from the outside
+* In case you're running Jenkins from a local server (without a public URI), you can still turn you Jenkins URI externally available using ngrok:
+https://dashboard.ngrok.com/get-started
+* This could be useful, for example, for configuring the GitHub webhook to tell Jenkins about new commits, or just to access Jenkins from anywhere.
+* Steps:
+    * Install ngrok:        `npm i -g ngrok`
+    * Connect your account: `./ngrok authtoken 4UaNif16MrTTzG6v1NpUs_5nzBdUBtmuddu9rMpYwC7`
+    * To start a HTTP tunnel on port 80, run: `ngrok http 80`
+        * You get an accesible public URI
+    * To access ngrok inspector: `http://localhost:4040`
+    * Status page: `https://dashboard.ngrok.com/status`
+
+
+## Integración Jenkins-GitHub
+* En GitHub:
+    * Bajo "Settings -> Webhooks", configurar la URI del webhook de Jenkins, e.g. https://408ef008.ngrok.io/github-webhook/
+* En el job de Jenkins:
+    * marcar "GitHub project" y configurar la URI del repo
+    * marcar "Git", configurando la URI, branch y subfolder (si se necesita)
+    * marcar "GitHub hook trigger for GITScm polling"
+
 ## Pendiente
 * https://trello.com/c/WCThfX8P/29-montar-ci-jenkins-dockerizado-en-local
 * Memory settings: https://live-rg-engineering.pantheon.io/news/putting-jenkins-docker-container
