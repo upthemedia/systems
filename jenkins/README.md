@@ -9,15 +9,15 @@
 ## Cómo construir la imagen y arrancarlo
 1. Construye la imagen: `docker build -t jenkins-upthemedia .`
 2. Para arrancarla puedes hacerlo:
+    * Con Docker Compose (preferiblemente): `docker-compse up -d`
     * Manualmente: `docker run -p 8080:8080 --rm --name jenkins-upthemedia jenkins-upthemedia:latest`, donde:
         * `jenkins-upthemedia:latest` es el nombre de la imagen a partir de la cual crear un contenedor
         * `jenkins-upthemedia` es el nombre que damos al contenedor
-    * Con Docker Compose: `docker-compse up -d`
 
 
 ## Pendiente
 * https://trello.com/c/WCThfX8P/29-montar-ci-jenkins-dockerizado-en-local
-
+* Memory settings: https://live-rg-engineering.pantheon.io/news/putting-jenkins-docker-container
 
 ## Links de interés
 * Dockerización de Jenkins
